@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>个人简历</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper-4.2.2.min.css">
+</head>
+<body>
+  <div id="topNavBar" class="topNavBar">
+    <div class="topNavBar-inner clearfix">
+      <a class="logo" href="#" alt="logo">
+        <span class="rs">RS</span><span class="card">card</span>
+      </a>
+      <nav class="menu">
+        <ul class="clearfix">
+          <li><a href="#siteAbout">关 于</a></li>
+          <li><a href="#siteSkills">技 能</a></li>
+          <li>
+            <a href="#siteWorks">作 品</a>
+            <ul class="subMenu">
+              <li>作 品 1</li>
+              <li>作 品 1</li>
+              <li>作 品 1</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">博 客</a>
+            <ul class="subMenu">
+              <li>博 客 1</li>
+              <li>博 客 1</li>
+              <li>博 客 1</li>
+            </ul>
+          </li>
+          <li><a href="#">日 历</a></li>
+          <li><a href="#">联 系 方 式</a></li>
+          <li><a href="#">其 他</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="banner"><div class="mask"></div></div>
+  <main class="information">
+    <div data-sign class="userCard" id="siteAbout">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="./image/avatar1.jpg" width="299" height="347" alt="头像">
+        </div>
+        <div class="text">
+          <span class="welcome">Hello<span class="triangle"></span></span>
+          <h1>施 翔</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>18</dd>
+            <dt>所在城市</dt>
+            <dd>江苏.南通</dd>
+            <dt>邮箱</dt>
+            <dd>shixiangcool@163.com</dd>
+            <dt>手机</dt>
+            <dd>17712266526</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-hexo"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zhihu0"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </footer>
+    </div>
+    <div class="downloadResume-wrapper">
+      <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
+    </div>
+    <p class="self">
+       &emsp;&emsp;施翔，2017年年中开始学习前端开发，熟悉HTML,CSS,JavaScript和Web开发的基础知识，掌握Git代码管理工具，熟练掌握Vue和React两个框架的使用。热爱编程，积极主动工作，满足工作业务需求后，会看优化代码。
+    </p>
+    <p class="self">
+       &emsp;&emsp;技能：HTML、CSS、JavaScript、Vue、React、Git、Node
+    </p>
+  </main>
+  <section data-sign class="skills" id="siteSkills">
+    <h2>专 业 技 能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>HTML &amp; CSS</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>JavaScript</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>jQuery</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Vue</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>React</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>HTTP</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section data-sign class="portfolio" id="siteWorks">
+    <h2>作 品 集</h2>
+    <div id="mySlides">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <img src="./image/nav_pic.jpg" class="swiper-slide">
+          <img src="./image/canvas.jpg" class="swiper-slide">
+          <img src="./image/apple_sildes.jpg" class="swiper-slide">
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <section class="message">
+    <h2>留言</h2>
+    <ol id="messageList"></ol>
+    <form id="postMessageForm">
+      <label for=""><span>Your Name:</span><input type="text" name="name" placeholder="Your Full Name"></label>
+      <label for=""><span>Message:</span><input type="text" name="content" placeholder="Your Message"></label>
+      <input type="submit" value="send">
+    </form>
+  </section>
+  <script src="./js/tween.js"></script>
+  <script src="//at.alicdn.com/t/font_590115_hzrb6jaljbawcdi.js"></script>
+  <script src="./js/swiper-4.2.2.min.js"></script>
+
+  <script src="./js/base/View.js"></script>
+  <script src="./js/base/Model.js"></script>
+  <script src="./js/base/Controller.js"></script>
+  
+  <script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
+  <script src="./js/init-swiper.js"></script>
+  <script src="./js/auto-slide-up.js"></script>
+  <script src="./js/topNavBar-mouseenter.js"></script>
+  <script src="./js/topNavBar-effect.js"></script>
+  <script src="./js/smoothly-navigation.js"></script>
+  <script src="./js/message.js"></script>
+</body>
+</html>
